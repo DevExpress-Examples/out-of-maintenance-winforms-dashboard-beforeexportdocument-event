@@ -4,7 +4,7 @@
 * [Form1.cs](./CS/WinForms_Dashboard_BeforeExportEvent_Example/Form1.cs) (VB: [Form1.vb](./VB/WinForms_Dashboard_BeforeExportEvent_Example/Form1.vb))
 <!-- default file list end -->
 
-# How to Handle the BeforeExportDocument event to Hide the Dashboard Filter Items
+# How to Handle the BeforeExportDocument Event to Hide the Dashboard Filter Items
 
 This example demonstrates how to hide dashboard filter items when a dashboard is exported to PDF and the [ExportFilters](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardPdfExportOptions.ExportFilters) export option is set to **false**.
 

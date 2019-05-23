@@ -30,7 +30,7 @@ Namespace WinForms_Dashboard_BeforeExportEvent_Example
 
         Private Sub DashboardDesigner1_BeforeExportDocument(ByVal sender As Object, ByVal e As BeforeExportDocumentEventArgs)
             If e.ExportAction = DashboardExportAction.ExportToPdf AndAlso e.PdfExportOptions.ExportFilters = False Then
-                e.HideItem(Function(item) TypeOf item Is FilterElementDashboardItem OrElse TypeOf item Is DateFilterDashboardItem)
+                e.HideItem(Function(item) TypeOf item Is FilterElementDashboardItem)
             End If
         End Sub
 

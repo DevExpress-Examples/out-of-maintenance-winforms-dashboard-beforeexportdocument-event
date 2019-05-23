@@ -35,8 +35,7 @@ namespace WinForms_Dashboard_BeforeExportEvent_Example
             if (e.ExportAction == DashboardExportAction.ExportToPdf &&
                 e.PdfExportOptions.ExportFilters == false)
             {
-                e.HideItem(item => item is FilterElementDashboardItem ||
-                item is DateFilterDashboardItem);
+                e.HideItem(item => item is FilterElementDashboardItem);
             }
         }
 

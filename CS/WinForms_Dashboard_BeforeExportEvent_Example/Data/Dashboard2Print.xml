@@ -66,22 +66,6 @@
         <Dimension DefaultId="DataItem0" />
       </FilterDimensions>
     </TreeView>
-    <DateFilter ComponentName="dateFilterDashboardItem1" Name="Date Filter 1" ShowCaption="false" DataSource="dashboardExtractDataSource1" SelectedDateTimePeriodIndex="2014 March-November">
-      <DataItems>
-        <Dimension DataMember="OrderDate" DateTimeGroupInterval="MonthYear" DefaultId="DataItem0" />
-      </DataItems>
-      <Dimension DefaultId="DataItem0" />
-      <DateTimePeriods>
-        <DateTimePeriod Name="2014 March-November">
-          <StartLimit>
-            <FixedDateTimePeriodLimit Date="2014-03-01T00:00:00" />
-          </StartLimit>
-          <EndLimit>
-            <FixedDateTimePeriodLimit Date="2014-11-01T23:59:59.9999999" />
-          </EndLimit>
-        </DateTimePeriod>
-      </DateTimePeriods>
-    </DateFilter>
     <ComboBox ComponentName="comboBoxDashboardItem1" Name="Combo Box 1" ShowCaption="false" DataSource="dashboardExtractDataSource1">
       <DataItems>
         <Dimension DataMember="Country" DefaultId="DataItem0" />
@@ -130,16 +114,13 @@
   </Items>
   <LayoutTree>
     <LayoutGroup Weight="100">
-      <LayoutGroup Orientation="Vertical" Weight="18.704156479217605">
+      <LayoutGroup Orientation="Vertical" Weight="21.059113300492612">
         <LayoutItem DashboardItem="comboBoxDashboardItem1" Weight="18.64406779661017" />
         <LayoutItem DashboardItem="treeViewDashboardItem1" Weight="81.355932203389827" />
       </LayoutGroup>
-      <LayoutGroup Orientation="Vertical" Weight="81.2958435207824">
-        <LayoutItem DashboardItem="dateFilterDashboardItem1" Weight="15.254237288135593" />
-        <LayoutGroup Weight="84.7457627118644">
-          <LayoutItem DashboardItem="chartDashboardItem1" Weight="54.436090225563909" />
-          <LayoutItem DashboardItem="gridDashboardItem1" Weight="45.563909774436091" />
-        </LayoutGroup>
+      <LayoutGroup Weight="78.940886699507388">
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="53.042121684867396" />
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="46.957878315132604" />
       </LayoutGroup>
     </LayoutGroup>
   </LayoutTree>
